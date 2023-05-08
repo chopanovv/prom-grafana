@@ -3,120 +3,14 @@ global:
   external_labels:
     stack: "apisix"
 scrape_configs:
-  # - job_name: "apisix"
-  #   metrics_path: "/apisix/prometheus/metrics"
-  #   static_configs:
-  #     - targets: ["apisix.bug.land"]
-  #   scheme: https
-  #   tls_config:
-  #     insecure_skip_verify: true
 
   - job_name: "wakapi"
     scrape_interval: 1m
     metrics_path: "/api/metrics"
     bearer_token: "OWVmYzVlY2YtNDc4MC00MWNiLWExNjAtNDg2MTk2ODc1NmFkCg=="
     static_configs:
-      - targets: ["wakapi.bug.land"]
+      - targets: ["test"]
     scheme: https
     tls_config:
       insecure_skip_verify: true
 
-  # - job_name: "fpoteryaev"
-  #   scrape_interval: 1m
-  #   metrics_path: "/api/metrics"
-  #   bearer_token: "NTg4YWY2ODQtZTQ5ZS00NmI4LTg5MWUtZDkxYjkzZDBkYTU1Cg=="
-  #   static_configs:
-  #     - targets: ["wakapi.bug.land"]
-  #   scheme: https
-  #   tls_config:
-  #     insecure_skip_verify: true
-
-  # - job_name: "ivladikin"
-  #   scrape_interval: 1m
-  #   metrics_path: "/api/metrics"
-  #   bearer_token: "ZDUyMGRhMmMtZjk4OC00YTYyLTllZjEtZjk4ZGI3OTVjN2M3Cg=="
-  #   static_configs:
-  #     - targets: ["wakapi.bug.land"]
-  #   scheme: https
-  #   tls_config:
-  #     insecure_skip_verify: true
-
-  # - job_name: "adakolosnichenko"
-  #   scrape_interval: 1m
-  #   metrics_path: "/api/metrics"
-  #   bearer_token: "NmZiZGVhZDctOGZlMS00MzYyLTllZGEtYzU4MThjZGY5ZDUxCg=="
-  #   static_configs:
-  #     - targets: ["wakapi.bug.land"]
-  #   scheme: https
-  #   tls_config:
-  #     insecure_skip_verify: true
-
-  # - job_name: "aomargadzhiev"
-  #   scrape_interval: 1m
-  #   metrics_path: "/api/metrics"
-  #   bearer_token: "NDRlNTUwYTctOWFhNS00NDcxLWFjYTctZDZiZWE4NTRmMTE1Cg=="
-  #   static_configs:
-  #     - targets: ["wakapi.bug.land"]
-  #   scheme: https
-  #   tls_config:
-  #     insecure_skip_verify: true
-
-  # - job_name: "ifrolov"
-  #   scrape_interval: 1m
-  #   metrics_path: "/api/metrics"
-  #   bearer_token: "NzcxMWY0YzQtODVkMS00NWZlLWE0NzYtNDRkZjZjM2Q0MTMzCg=="
-  #   static_configs:
-  #     - targets: ["wakapi.bug.land"]
-  #   scheme: https
-  #   tls_config:
-  #     insecure_skip_verify: true
-
-  # - job_name: "smovzh"
-  #   scrape_interval: 1m
-  #   metrics_path: "/api/metrics"
-  #   bearer_token: "Zjc0YmZlYjgtOThjZS00OWZhLWI3Y2ItOTg2YTYxMTdhNmUzCg=="
-  #   static_configs:
-  #     - targets: ["wakapi.bug.land"]
-  #   scheme: https
-  #   tls_config:
-  #     insecure_skip_verify: true
-
-  # - job_name: "nsvetlov"
-  #   scrape_interval: 1m
-  #   metrics_path: "/api/metrics"
-  #   bearer_token: "MDY3YWEyODUtNjYzMS00ZmFjLWFkMWYtODJiMTFmZTVjYTMwCg=="
-  #   static_configs:
-  #     - targets: ["wakapi.bug.land"]
-  #   scheme: https
-  #   tls_config:
-  #     insecure_skip_verify: true
-
-  # - job_name: "rkulikov"
-  #   scrape_interval: 1m
-  #   metrics_path: "/api/metrics"
-  #   bearer_token: "NTIwNTRkYmItYWY1OC00MDQ1LWJiNzMtZjE5NjIyZWY3ZTRiCg=="
-  #   static_configs:
-  #     - targets: ["wakapi.bug.land"]
-  #   scheme: https
-  #   tls_config:
-  #     insecure_skip_verify: true
-
-  # - job_name: "tmihailova"
-  #   scrape_interval: 1m
-  #   metrics_path: "/api/metrics"
-  #   bearer_token: "OTZhMDU4ZTUtMzFiMi00YzFjLThhN2YtM2FmMGU5Zjc2Mzg0Cg=="
-  #   static_configs:
-  #     - targets: ["wakapi.bug.land"]
-  #   scheme: https
-  #   tls_config:
-  #     insecure_skip_verify: true
-
-  # - job_name: "vmandrika"
-  #   scrape_interval: 1m
-  #   metrics_path: "/api/metrics"
-  #   bearer_token: "ZGJlM2E5NmItMDFiMC00MzQ3LWI5ZWYtN2M0YjkxZGMzZWYyCg=="
-  #   static_configs:
-  #     - targets: ["wakapi.bug.land"]
-  #   scheme: https
-  #   tls_config:
-  #     insecure_skip_verify: true
